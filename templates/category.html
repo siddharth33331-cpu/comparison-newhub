@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ category.name }}</h1>
+
+<a href="/products/compare/{{ category.name|slugify }}/">
+<button>Compare Products</button>
+</a>
+
+<br><br>
+
+{% for product in products %}
+
+<div class="product-card">
+    <div class="product-title">{{ product.name }}</div>
+    <p>{{ product.description }}</p>
+</div>
+
+{% empty %}
+
+<p>No products yet.</p>
+
+{% endfor %}
+
+{% endblock %}

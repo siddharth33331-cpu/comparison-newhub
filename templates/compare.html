@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Compare Products</h1>
+
+<form method="GET">
+
+<h3>Select Category</h3>
+
+<select name="category" onchange="this.form.submit()">
+
+<option value="">Choose category</option>
+
+{% for category in categories %}
+
+<option value="{{ category.id }}">
+{{ category.name }}
+</option>
+
+{% endfor %}
+
+</select>
+
+
+{% if products %}
+
+<h3>Select products</h3>
+
+{% for product in products %}
+
+<label>
+
+<input type="checkbox" name="products" value="{{ product.id }}">
+
+{{ product.name }}
+
+</label>
+
+<br>
+
+{% endfor %}
+
+<br>
+<button type="submit">Compare</button>
+
+{% endif %}
+
+</form>
+
+
+{% if selected_products %}
+
+<h2>Comparison</h2>
+
+<table border="1" cellpadding="15">
+
+<tr>
+<th>Feature</th>
+
+{% for product in selected_products %}
+<th>{{ product.name }}</th>
+{% endfor %}
+
+</tr>
+
+<tr>
+<td>Description</td>
+
+{% for product in selected_products %}
+<td>{{ product.description }}</td>
+{% endfor %}
+
+</tr>
+
+<tr>
+<td>Website</td>
+
+{% for product in selected_products %}
+<td>
+<a href="{{ product.website_url }}">Visit</a>
+</td>
+{% endfor %}
+
+</tr>
+
+</table>
+
+{% endif %}
+
+{% endblock %}

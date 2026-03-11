@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+    <h1>CompareHub</h1>
+    <p>Compare products, read reviews, and discuss with the community.</p>
+
+    <div class="hero-actions">
+        <a href="/products/" class="main-button">Browse Products</a>
+        <a href="/products/compare/" class="secondary-button">Start Comparing</a>
+    </div>
+</div>
+
+
+<div class="categories">
+
+<h2>Popular Categories</h2>
+
+<div class="category-grid">
+
+<a href="/products/category/ai-tools/" class="category-card cat-ai">
+AI Tools
+</a>
+
+<a href="/products/category/laptops/" class="category-card cat-laptops">
+Laptops
+</a>
+
+<a href="/products/category/software/" class="category-card cat-software">
+Software
+</a>
+
+<a href="/products/category/online-courses/" class="category-card cat-courses">
+Online Courses
+</a>
+
+<a href="/products/category/gadgets/" class="category-card cat-gadgets">
+Gadgets
+</a>
+
+<a href="/products/category/developer-tools/" class="category-card cat-tools">
+Developer Tools
+</a>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="trending">
+
+<h2>Trending Products</h2>
+
+<div class="trending-grid">
+
+<div class="trending-card">
+<h3>ChatGPT</h3>
+<p>AI assistant for coding and research</p>
+</div>
+
+<div class="trending-card">
+<h3>Notion AI</h3>
+<p>AI powered workspace</p>
+</div>
+
+<div class="trending-card">
+<h3>Claude</h3>
+<p>Large language model assistant</p>
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

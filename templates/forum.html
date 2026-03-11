@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Community Forum</h1>
+
+<p>Discuss products, reviews, and comparisons.</p>
+
+<hr>
+
+{% for thread in threads %}
+
+<div class="product-card">
+
+<a href="/products/forum/thread/{{ thread.id }}/">
+
+<h3>{{ thread.title }}</h3>
+
+</a>
+
+<p>Created by {{ thread.creator.username }}</p>
+
+</div>
+
+{% empty %}
+
+<p>No discussions yet.</p>
+
+{% endfor %}
+
+{% endblock %}

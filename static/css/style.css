@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #222;
+    color: white;
+    padding: 15px 40px;
+}
+
+nav h2 {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 40px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 60px 40px;
+    background: linear-gradient(120deg, #4f46e5, #6366f1);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.categories {
+    margin-top: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cat-ai { background: #3b82f6; }
+.cat-laptops { background: #10b981; }
+.cat-software { background: #f59e0b; }
+.cat-courses { background: #ef4444; }
+.cat-gadgets { background: #8b5cf6; }
+.cat-tools { background: #14b8a6; }
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.trending {
+    margin-top: 60px;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trending-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+.category-card {
+    text-decoration: none;
+    display: block;
+}
+.hero-actions {
+    margin-top: 25px;
+}
+
+.main-button {
+    background: white;
+    color: #4f46e5;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.secondary-button {
+    background: #22c55e;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-button:hover {
+    background: #f3f4f6;
+}
+
+.secondary-button:hover {
+    background: #16a34a;
+}
